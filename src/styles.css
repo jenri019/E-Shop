@@ -5,6 +5,19 @@
   padding: 0px;
 }
 
+input:focus
+{
+    outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .bg-3 {
     background-color: #1687A7;
+}
+
+ul {
+  list-style: none;
 }
