@@ -1,0 +1,64 @@
+.card-body {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    min-width: 15rem;
+    width: 50%;
+    height: 20rem;
+    border-radius: 3rem;
+}
+
+.welcome-msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vh;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-style: solid; 
+}
+
+input {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    padding: 0.3rem;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+h3 {
+    margin: 0;
+}
+
+button {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: #276678;
+    width: 10rem;
+    height: 2rem;
+    font-weight: bolder;
+}
+
+.text-white {
+    color: #F6F5F5
+}
+
+input, button, .card-body {
+    -webkit-box-shadow: 3px 4px 14px 2px rgba(0,0,0,0.69); 
+    box-shadow: 3px 4px 14px 2px rgba(0,0,0,0.69);
+}
