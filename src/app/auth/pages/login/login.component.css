@@ -1,8 +1,11 @@
 .card-body {
     display: flex;
+
     position: absolute;
-    top: 25%;
-    right: 25%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
     flex-direction: column;
     padding: 1rem;
     align-items: center;
