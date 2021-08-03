@@ -1,0 +1,69 @@
+.rgflex {
+  display: flex;
+}
+.rgcol {
+  flex-direction: column;
+}
+.rgrow {
+  flex-direction: row;
+}
+
+.rgContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0px auto;
+  padding-top: 4rem;
+}
+
+.rgflex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.container {
+  width: 40%;
+  height: 600px;
+  border-radius: 50px;
+  background-color: #1687a7;
+  margin: 0px auto;
+}
+
+.rgdiv {
+  display: flex;
+  flex-direction: column;
+}
+.rgdiv > div {
+  width: 50%;
+}
+
+.rglabel{
+    margin-top: 1rem;
+    font-size: 24px;
+    color: #f6f5f5;
+    font-weight: 500;
+}
+
+input[name="name"],
+input[name="lastname"] {
+    margin-top: 1rem;
+  border-radius: 20px;
+  font-size: 18px;
+  width: 80%;
+  background-color: #f6f5f5;
+  padding: 5px;
+  padding-left: 10px;
+  line-height: 24px;
+}
+
+input[name="email"],
+input[name="password"],
+input[name="cpassword"] {
+  background-color: #f6f5f5;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top: 1rem;
+  line-height: 24px;
+}
