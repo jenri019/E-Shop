@@ -1,0 +1,13 @@
+ul{
+    display: flex;
+    padding: 1rem;
+}
+
+li {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+li:hover {
+    cursor: pointer;
+}
