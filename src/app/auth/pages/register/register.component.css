@@ -21,6 +21,7 @@
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
+  color: #f6f5f5;
 }
 
 .rgContainer {
@@ -28,7 +29,7 @@
   flex-direction: column;
   width: 70%;
   margin: 0px auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .rgflex {
@@ -37,7 +38,7 @@
   width: 100%;
 }
 .container {
-  width: 40%;
+  width: 650px;
   height: 600px;
   border-radius: 50px;
   background-color: #1687a7;
