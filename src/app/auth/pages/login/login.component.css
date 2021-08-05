@@ -71,7 +71,12 @@ button {
     color: #F6F5F5
 }
 
-input, button, .card-body {
-    -webkit-box-shadow: 3px 4px 14px 2px rgba(0,0,0,0.69); 
-    box-shadow: 3px 4px 14px 2px rgba(0,0,0,0.69);
+p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+span:hover {
+    cursor: pointer;
+    color: #000000;
 }
