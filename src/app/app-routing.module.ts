@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestComponent } from './test/test.component';
+import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 const routes: Routes = [
   {
@@ -9,11 +9,11 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: TestComponent
+    loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule)
   },
   {
     path: '**',
-    redirectTo: ''
+    component: ErrorPageComponent
   }
 ];
 
