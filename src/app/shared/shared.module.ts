@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SimpleNavComponent } from './simple-nav/simple-nav.component';
 import { RouterModule } from '@angular/router';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 
 @NgModule({
   declarations: [
-    SimpleNavComponent
+    ErrorPageComponent
   ],
   exports: [
-    SimpleNavComponent
   ],
   imports: [
     CommonModule,
