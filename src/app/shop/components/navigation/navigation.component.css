@@ -1,0 +1,9 @@
+.navBody {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
