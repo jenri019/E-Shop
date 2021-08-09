@@ -7,9 +7,6 @@
 .rgrow {
   flex-direction: row;
 }
-.rgfamily {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 .rgshadow {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
 }
@@ -19,17 +16,18 @@
 }
 .rgtitle {
   display: block;
-  font-size: 70px;
+  font-size: 35px;
   text-align: center;
   font-weight: bold;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f6f5f5;
 }
 
 .rgContainer {
   width: 70%;
   margin: 0px auto;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .container {
@@ -50,7 +48,7 @@
 
 .rglabel {
   margin-top: 1rem;
-  font-size: 24px;
+  font-size: 18px;
   color: #f6f5f5;
   font-weight: 500;
 }
@@ -65,8 +63,8 @@ input[name="lastname"] {
   width: 80%;
   background-color: #f6f5f5;
   padding: 5px;
-  padding-left: 10px;
-  line-height: 24px;
+  padding-left: 15px;
+  line-height: 18px;
   transition: all 100ms;
 }
 
@@ -74,14 +72,14 @@ input[name="email"],
 input[name="password"],
 input[name="cpassword"] {
   border: 0px;
+  margin-top: 1rem;
   background-color: #f6f5f5;
   border-radius: 20px;
   font-size: 18px;
   font-weight: 500;
   padding: 5px;
-  padding-left: 10px;
-  margin-top: 1rem;
-  line-height: 24px;
+  padding-left: 15px;
+  line-height: 18px;
   transition: all 100ms;
 }
 
@@ -95,13 +93,13 @@ input[name="cpassword"]:focus {
 
 .rgbtn {
   margin: 0px auto;
-  font-size: 24px;
+  font-size:18px;
   font-weight: 500;
   color: #f6f5f5;
   margin-top: 50px;
   border: 0px;
-  width: 300px;
-  height: 50px;
+  width: 250px;
+  height: 40px;
   border-radius: 50px;
   background-color: #276678;
 }
@@ -112,5 +110,6 @@ input[name="cpassword"]:focus {
   justify-content: flex-end;
 }
 .rgbtn:hover {
-  border: 5px solid #1b4753;
+  background-color: #15363f;
+  cursor: pointer;
 }
