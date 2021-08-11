@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --primary: #F6F5F5;
+  --second: #D3E0EA;
+  --third: #1687A7;
+  --fourth: #276678;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -14,12 +21,36 @@ button:hover {
   cursor: pointer;
 }
 
+.bg-1 {
+  background-color: var(--primary);
+}
+
+.bg-2 {
+  background-color: var(--second);
+}
+
 .bg-3 {
-    background-color: #1687A7;
+    background-color: var(--third);
+}
+
+.bg-4 {
+  background-color: var(--fourth);
+}
+
+.text-color-1 {
+  color: var(--primary);
+}
+
+.text-color-2 {
+  color: var(--second);
+}
+
+.text-color-3 {
+  color: var(--third);
 }
 
 .text-color-4 {
-  color: #276678;
+  color: var(--fourth);
 }
 
 .text-bold{
@@ -36,6 +67,17 @@ button:hover {
 
 .transition {
   transition: 1s;
+}
+
+.hcenter {
+  margin: 0 auto;
+}
+.w-100 {
+  width: 100%;
+}
+
+.nborder {
+  border-style: none;
 }
 
 ul {
