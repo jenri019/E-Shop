@@ -1,9 +1,55 @@
 .navBody {
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
+    height: auto;
+}
+
+.navaccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navaccount img {
+    width: 4rem;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+input {
+    width: calc(100% - 2rem);
+    padding: 0.5rem 1rem;
+    border-radius: 10px 0 0 10px;
+}
+
+button {
+    width: 2rem;
+    border-radius: 0 10px 10px 0;
 }
 
 img {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+
+li:hover {
+    cursor: pointer;
 }
