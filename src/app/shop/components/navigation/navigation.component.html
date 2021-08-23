@@ -1,9 +1,6 @@
 <div class="navBody bg-4 text-color-1">
     <span>
-        <a routerLink="/">
-            <img
-                src=""
-                alt="Main logo">
+        <a routerLink="/">LOGO
         </a>
     </span>
 
@@ -11,20 +8,43 @@
         <div class="w-100">
             <form action="">
                 <input class="nborder" type="text" name="" id="" placeholder="Buscar producto...">
-                <button class="nborder">S</button>
+                <button class="nborder">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                      </svg>
+                </button>
             </form>
         </div>
         <div class="w-100">
             <ul>
-                <li>Option</li>
-                <li>Option</li>
-                <li>Option</li>
-                <li>Option</li>
+                <li>Categorias
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </li>
+                <li>Promociones</li>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
             </ul>
         </div>
     </div>
     <div class="navaccount" routerLink="auth/login">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/User_icon_BLACK-01.png" alt="">
-        <p>My account</p>
+        <svg class="user" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg>
     </div>
 </div>

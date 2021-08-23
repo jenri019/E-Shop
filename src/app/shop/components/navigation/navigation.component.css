@@ -6,19 +6,27 @@
 
 .navaccount {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
-.navaccount img {
-    width: 4rem;
-}
-
 span {
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 7px;
+}
+
+span a {
+    color: #000000;
+}
+
+span a:hover {
+    text-decoration: none;
 }
 
 form{
@@ -31,12 +39,10 @@ form{
 input {
     width: calc(100% - 2rem);
     padding: 0.5rem 1rem;
-    border-radius: 10px 0 0 10px;
 }
 
 button {
-    width: 2rem;
-    border-radius: 0 10px 10px 0;
+    width: 4rem;
 }
 
 img {
@@ -52,4 +58,9 @@ ul{
 
 li:hover {
     cursor: pointer;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
 }
