@@ -1,5 +1,18 @@
 .body{
+    max-width: 1350px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-body{
+    width: 1000px ;
+    height: 250px;
+    background: #EBE8E8;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
