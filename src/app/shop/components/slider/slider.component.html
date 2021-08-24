@@ -1,0 +1,16 @@
+<div class="carousel bg-2">
+    <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let images of images">
+            <!-- All in carousel item will be modified to show it with another style-->
+            <div class="carousel-items">
+                <div class="text">
+                    <h1>{{images.title}}</h1>
+                    <p>A little offer description showed in screen. {{images.desc}}</p>
+                </div>
+                <div class="img">
+                    <img [src]="images.src" alt="">
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

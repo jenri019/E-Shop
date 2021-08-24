@@ -6,6 +6,8 @@ import { MainComponent } from './pages/main/main.component';
 import { ShopRoutingModule } from './shop-routing.module';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { CategoryComponent } from './components/category/category.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -15,11 +17,16 @@ import { CategoryComponent } from './components/category/category.component';
     FooterComponent,
     MainComponent,
     CardProductComponent,
-    CategoryComponent
+    CategoryComponent,
+    SliderComponent,
   ],
   imports: [
     CommonModule,
-    ShopRoutingModule
+    ShopRoutingModule,
+    NgbModule
+  ],
+  bootstrap: [
+    SliderComponent
   ]
 })
 export class ShopModule { }
