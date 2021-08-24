@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { ShopRoutingModule } from './shop-routing.module';
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { CategoryComponent } from './components/category/category.component';
 
 
 
@@ -13,7 +14,8 @@ import { CardProductComponent } from './components/card-product/card-product.com
     NavigationComponent,
     FooterComponent,
     MainComponent,
-    CardProductComponent
+    CardProductComponent,
+    CategoryComponent
   ],
   imports: [
     CommonModule,
