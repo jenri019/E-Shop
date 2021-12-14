@@ -64,3 +64,12 @@ li:hover {
     display: flex;
     flex-direction: column;
 }
+
+svg:hover {
+    cursor: pointer;
+}
+
+svg:active {
+    text-decoration: none;
+    outline: none;
+}
