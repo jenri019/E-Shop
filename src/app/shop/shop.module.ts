@@ -9,6 +9,8 @@ import { CategoryComponent } from './components/category/category.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductComponent } from './pages/product/product.component';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { DetailsContainerComponent } from './components/details-container/details-container.component';
 
 
 
@@ -21,6 +23,8 @@ import { ProductComponent } from './pages/product/product.component';
     CategoryComponent,
     SliderComponent,
     ProductComponent,
+    ImageSliderComponent,
+    DetailsContainerComponent,
   ],
   imports: [
     CommonModule,

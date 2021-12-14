@@ -1,0 +1,8 @@
+.slider>img {
+    object-fit: cover;
+}
+
+.fzimage>img {
+    height: 30rem;
+    margin-bottom: 2rem;
+}

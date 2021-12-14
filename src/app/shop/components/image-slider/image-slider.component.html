@@ -1,0 +1,8 @@
+<div class="fzimage">
+    <img src="{{_imgURL[0]}}" alt="full-size image" class="w-100">
+</div>
+<div class="slider h-flex">
+    <li *ngFor = 'let image of _imgURL'>
+        <img src="{{image}}" alt="" class="w-50">
+    </li>
+</div>
