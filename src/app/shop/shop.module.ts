@@ -8,6 +8,7 @@ import { CardProductComponent } from './components/card-product/card-product.com
 import { CategoryComponent } from './components/category/category.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductComponent } from './pages/product/product.component';
 
 
 
@@ -19,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CardProductComponent,
     CategoryComponent,
     SliderComponent,
+    ProductComponent,
   ],
   imports: [
     CommonModule,
