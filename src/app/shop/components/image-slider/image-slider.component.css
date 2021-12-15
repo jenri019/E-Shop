@@ -7,6 +7,10 @@
     height: 7rem;
 }
 
+.slider>img:hover {
+    cursor: pointer;
+}
+
 .slider::-webkit-scrollbar {
     display: none;
 }
