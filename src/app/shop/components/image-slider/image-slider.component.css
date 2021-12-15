@@ -1,8 +1,26 @@
+.slider {
+    overflow-x: scroll;
+}
+
 .slider>img {
-    object-fit: cover;
+    padding: 0.5rem;
+    height: 7rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE and Edge */
+.slider {
+    -ms-overflow-style: none;
 }
 
 .fzimage>img {
     height: 30rem;
     margin-bottom: 2rem;
+}
+
+.btnarrow {
+    width: 10rem;
 }
