@@ -7,15 +7,19 @@
     z-index: 1;
     border-radius: 50%;
     border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
-    height: auto;
-    padding: 0 7px;
-    font-weight: bolder;
 }
 
 .container>button:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+svg {
+    margin: 5px;
 }
 
 .slider {

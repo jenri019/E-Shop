@@ -2,7 +2,12 @@
     <img src="{{_imgURL[0]}}" alt="full-size image" class="w-100" id="large-img">
 </div>
 <div id="container" class="container h-flex">
-    <button class="btnarrow bg-4 text-color-1" id="btnleft" (click)="left()"><</button>
+    <button class="btnarrow bg-4 text-color-1" id="btnleft" (click)="left()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+          </svg>
+    </button>
     <div id="slider" class="slider h-flex">
         <img *ngFor = 'let image of _imgURL; let i = index; let first = first' src="{{image}}" alt=""
         class="w-50 short-image"
@@ -10,5 +15,10 @@
         (click)="setfull(i)"
         [ngClass]="{'active': first}">
     </div>
-    <button class="btnarrow bg-4 text-color-1" id="btnright" (click)="right()">></button>
+    <button class="btnarrow bg-4 text-color-1" id="btnright" (click)="right()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+          </svg>
+    </button>
 </div>
