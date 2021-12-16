@@ -1,14 +1,40 @@
+.container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container>button {
+    z-index: 1;
+    border-radius: 50%;
+    border-style: none;
+    width: 2rem;
+    height: auto;
+    padding: 0 7px;
+    font-weight: bolder;
+}
+
+.container>button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .slider {
     overflow-x: scroll;
+    margin: 0 1rem;
 }
 
 .slider>img {
     padding: 0.5rem;
     height: 7rem;
+    opacity: 0.5;
 }
 
 .slider>img:hover {
     cursor: pointer;
+}
+
+.slider>.active {
+    opacity: 1.0;
 }
 
 .slider::-webkit-scrollbar {

@@ -1,3 +1,4 @@
+import { Element } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -27,7 +28,7 @@ export class ImageSliderComponent implements OnInit {
   }
 
   left() {
-    let slider = document.getElementById("slider-container");
+    let slider = document.getElementById("slider");
     let left = <number>slider?.scrollLeft;
     let width = <number>slider?.scrollWidth;
     
@@ -39,7 +40,7 @@ export class ImageSliderComponent implements OnInit {
   }
 
   right() {
-    let slider = document.getElementById("slider-container");
+    let slider = document.getElementById("slider");
     let right = <number>slider?.scrollLeft;
     let div = <number>slider?.offsetWidth;
     let width = <number>slider?.scrollWidth;
@@ -52,7 +53,11 @@ export class ImageSliderComponent implements OnInit {
   }
 
   setfull(position:number){
+    let id:string = "img-"+position;
+    <any>document.querySelector(".active")?.removeAttribute("class");
     (<HTMLImageElement>document.getElementById('large-img')).src = this._imgURL[position];
+    document.getElementById(id)?.setAttribute("class","active");
+    console.log("Imagen "+position);
   }
 
 }

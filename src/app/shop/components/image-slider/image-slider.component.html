@@ -1,9 +1,14 @@
 <div class="fzimage">
     <img src="{{_imgURL[0]}}" alt="full-size image" class="w-100" id="large-img">
 </div>
-<div id="slider-container" class="slider h-flex">
-    <img *ngFor = 'let image of _imgURL; let i = index' src="{{image}}" alt="" class="w-50"
-    (click)="setfull(i)">
+<div id="container" class="container h-flex">
+    <button class="btnarrow bg-4 text-color-1" id="btnleft" (click)="left()"><</button>
+    <div id="slider" class="slider h-flex">
+        <img *ngFor = 'let image of _imgURL; let i = index; let first = first' src="{{image}}" alt=""
+        class="w-50 short-image"
+        id="img-{{i}}"
+        (click)="setfull(i)"
+        [ngClass]="{'active': first}">
+    </div>
+    <button class="btnarrow bg-4 text-color-1" id="btnright" (click)="right()">></button>
 </div>
-<button class="btnarrow" id="btnleft" (click)="left()"><</button>
-<button class="btnarrow" id="btnright" (click)="right()">></button>
