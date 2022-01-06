@@ -1,1 +1,13 @@
-<p>description works!</p>
+
+<div *ngFor="let product of products" class="container">
+    <div class="title h-flex">
+        <h4>Descripcion</h4>
+        <h4>Caracteristicas</h4>
+    </div>
+    <div class="info description w-100">
+        {{product.description}}
+    </div>
+    <div class="info features w-100">
+        {{product.features}}
+    </div>
+</div>
