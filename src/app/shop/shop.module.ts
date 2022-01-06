@@ -12,6 +12,7 @@ import { ProductComponent } from './pages/product/product.component';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 import { DetailsContainerComponent } from './components/details-container/details-container.component';
 import { DescriptionComponent } from './components/description/description.component';
+import { ProductService } from './services/product.service';
 
 
 
@@ -35,6 +36,9 @@ import { DescriptionComponent } from './components/description/description.compo
   ],
   bootstrap: [
     SliderComponent
+  ],
+  providers: [
+    ProductService
   ]
 })
 export class ShopModule { }
