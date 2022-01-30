@@ -6,3 +6,15 @@
 .container>.info {
     padding: 1rem 2rem;
 }
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: solid 1px #F6F5F5;
+    text-align: justify;
+}
