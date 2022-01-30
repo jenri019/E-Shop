@@ -1,5 +1,6 @@
 <app-navigation></app-navigation>
 <br>
-<app-details-container></app-details-container>
+<app-details-container *ngIf="existence; else elseBlock"></app-details-container>
+<ng-template #elseBlock>Product can not be found :C</ng-template>
 <br>
 <app-footer></app-footer>
