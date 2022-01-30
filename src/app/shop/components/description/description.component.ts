@@ -8,7 +8,7 @@ import { ProductService } from '../../services/product.service';
   styleUrls: ['./description.component.css']
 })
 export class DescriptionComponent implements OnInit {
-  public productList:Product[] = this.productService.products;
+  public product:Product[] = this.productService.selectedProduct;
   public features:any;
   public keys:string[] = [];
   public values:string[] = [];
@@ -17,9 +17,8 @@ export class DescriptionComponent implements OnInit {
 
   constructor(private productService:ProductService)
   {
-    let index = productService.index;
-    this.description = this.productList[index].description;
-    this.features = this.productList[index].features;
+    this.description = this.product[0].description;
+    this.features = this.product[0].features;
 
     for(let j = 0; j < this.features.length; j++) {
       for(let k in this.features[j]){

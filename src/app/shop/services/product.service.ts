@@ -5,7 +5,6 @@ import { Product } from "src/app/models/product.interface";
 
 export class ProductService {
 
-    private _index:number = 0;
     private _products:Product[] = [
         {
             id:"1223",
@@ -61,16 +60,41 @@ export class ProductService {
         },
     ];
 
+    private _selectedProduct:Product[] = [
+        {
+            id:"",
+            name: "",
+            price: 0,
+            inOffer: false,
+            stock: 0,
+            description: "",
+            features: [
+                {
+                    color:'0',
+                    peso:'0',
+                    marca:'0',
+                    año:'0',
+                }
+            ]
+        }
+    ];
+
     get products():Product[] {
         return [...this._products];
     }
 
-    get index():number{
-        return this._index;
+    get selectedProduct():Product[] {
+        return [...this._selectedProduct];
     }
 
-    setIndice(index:number){
-        this._index = index;
+    setProductInfo(index:number){
+        this._selectedProduct[0].id = this._products[index].id;
+        this._selectedProduct[0].name = this._products[index].name;
+        this._selectedProduct[0].price = this._products[index].price;
+        this._selectedProduct[0].inOffer = this._products[index].inOffer;
+        this._selectedProduct[0].stock = this._products[index].stock;
+        this._selectedProduct[0].description = this._products[index].description;
+        this._selectedProduct[0].features = this._products[index].features;
     }
 
     constructor(){}
