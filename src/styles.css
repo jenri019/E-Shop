@@ -101,3 +101,23 @@ ul {
   display: flex;
   flex-direction: row;
 }
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
