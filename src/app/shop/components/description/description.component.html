@@ -1,23 +1,23 @@
 
 <div class="container flex">
     <div class="title h-flex">
-        <h4>Descripcion</h4>
-        <h4>Caracteristicas</h4>
+        <h4 id="description-title" class="display hover" (click)="displayDescription()">Descripcion</h4>
+        <h4 id="features-title" class="non-display hover" (click)="displayFeatures()">Caracteristicas</h4>
     </div>
-    <div class="h-flex">
-        <div class="info description w-50">
+    <div class="shows h-flex">
+        <div id="description" class="info text-justify w-100 display">
             {{description}}
         </div>
-        <div id="features" class="info features w-50">
+        <div id="features" class="info w-100 non-display">
             <table>
                 <tr *ngFor="let key of keys; let i = index" >
                     <ng-container *ngIf="i%2 == 0; else elseTemplate">
-                        <td class="bg-4">{{keys[i]}}</td>
-                        <td class="bg-4">{{values[i]}}</td>
+                        <td class="bg-4 text-right text-color-1">{{keys[i]}}</td>
+                        <td class="bg-4 text-color-1">{{values[i]}}</td>
                     </ng-container>
                     <ng-template #elseTemplate>
-                        <td class="bg-2">{{keys[i]}}</td>
-                        <td class="bg-2">{{values[i]}}</td>
+                        <td class="bg-2 text-right text-color-4">{{keys[i]}}</td>
+                        <td class="bg-2 text-color-4">{{values[i]}}</td>
                     </ng-template>
                 </tr>
             </table>
