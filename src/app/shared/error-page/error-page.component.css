@@ -1,0 +1,27 @@
+div.container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.error-text {
+}
+
+img {
+    width: 25%;
+    height: fit-content;
+}
+
+p {
+    margin: 0;
+}
+
+p:nth-child(1) {
+    letter-spacing: 1rem;
+    font-size: 12rem;
+    font-weight: bolder;
+}
+
+p:nth-child(2) {
+    font-size: 2rem;
+}

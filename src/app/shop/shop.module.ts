@@ -13,6 +13,7 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
 import { DetailsContainerComponent } from './components/details-container/details-container.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { ProductService } from './services/product.service';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -32,7 +33,8 @@ import { ProductService } from './services/product.service';
   imports: [
     CommonModule,
     ShopRoutingModule,
-    NgbModule
+    NgbModule,
+    SharedModule
   ],
   bootstrap: [
     SliderComponent
