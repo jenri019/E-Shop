@@ -14,6 +14,7 @@ import { DetailsContainerComponent } from './components/details-container/detail
 import { DescriptionComponent } from './components/description/description.component';
 import { ProductService } from './services/product.service';
 import { SharedModule } from '../shared/shared.module';
+import { BuyOptionsComponent } from './components/buy-options/buy-options.component';
 
 
 
@@ -29,6 +30,7 @@ import { SharedModule } from '../shared/shared.module';
     ImageSliderComponent,
     DetailsContainerComponent,
     DescriptionComponent,
+    BuyOptionsComponent,
   ],
   imports: [
     CommonModule,
