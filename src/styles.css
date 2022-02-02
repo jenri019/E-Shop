@@ -121,3 +121,7 @@ ul {
 .hover:hover {
   cursor: pointer;
 }
+
+.justify-around {
+  justify-content: space-between;
+}

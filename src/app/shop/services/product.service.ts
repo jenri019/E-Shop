@@ -11,7 +11,7 @@ export class ProductService {
             name: "Televisor",
             price: 2500,
             inOffer: false,
-            stock: 23,
+            stock: 0,
             description: "¨This is a TV",
             features: [
                 {

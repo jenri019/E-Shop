@@ -1,1 +1,24 @@
-<p>buy-options works!</p>
+<h2>{{name}}</h2>
+<h3>{{price}}</h3>
+<ng-container *ngIf="disponibility; else nonDisponible">
+    <h3>Disponible</h3>
+</ng-container>
+<ng-template #nonDisponible>
+    <h3>No Disponible</h3>
+</ng-template>
+<form action="" class="v-flex justify-around">
+    <div class="h-flex product-number">
+        <ng-container *ngIf="disponibility; else buyOptions">
+            <button>-</button>
+            <input type="number" name="" id="" value="1" min="1" [max]="stock">
+            <button>+</button>
+        </ng-container>
+        <ng-template #buyOptions>
+            <button>-</button>
+            <input type="number" name="" id="" value="0" disabled>
+            <button>+</button>
+        </ng-template>
+    </div>
+    <button disabled>Comprar ahora</button>
+    <button disabled>Agregar al carrito</button>
+</form>
