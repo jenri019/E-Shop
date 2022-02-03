@@ -60,7 +60,7 @@ export class ProductService {
         },
     ];
 
-    private _selectedProduct:Product[] = [
+    private _selectedProduct:Product = 
         {
             id:"",
             name: "",
@@ -76,25 +76,24 @@ export class ProductService {
                     año:'0',
                 }
             ]
-        }
-    ];
+        };
 
     get products():Product[] {
         return [...this._products];
     }
 
     get selectedProduct():Product[] {
-        return [...this._selectedProduct];
+        return [this._selectedProduct];
     }
 
     setProductInfo(index:number){
-        this._selectedProduct[0].id = this._products[index].id;
-        this._selectedProduct[0].name = this._products[index].name;
-        this._selectedProduct[0].price = this._products[index].price;
-        this._selectedProduct[0].inOffer = this._products[index].inOffer;
-        this._selectedProduct[0].stock = this._products[index].stock;
-        this._selectedProduct[0].description = this._products[index].description;
-        this._selectedProduct[0].features = this._products[index].features;
+        this._selectedProduct.id = this._products[index].id;
+        this._selectedProduct.name = this._products[index].name;
+        this._selectedProduct.price = this._products[index].price;
+        this._selectedProduct.inOffer = this._products[index].inOffer;
+        this._selectedProduct.stock = this._products[index].stock;
+        this._selectedProduct.description = this._products[index].description;
+        this._selectedProduct.features = this._products[index].features;
     }
 
     constructor(){}

@@ -31,7 +31,9 @@ export class DescriptionComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    
+  }
 
   displayDescription() {
     if(!this.display){
