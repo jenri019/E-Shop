@@ -58,6 +58,110 @@ export class ProductService {
                 }
             ]
         },
+        {
+            id:"1253",
+            name: "Televisor",
+            price: 2500,
+            inOffer: false,
+            stock: 0,
+            description: "¨This is a TV",
+            features: [
+                {
+                    color:'azul',
+                    peso:'poco',
+                    marca:'juan',
+                    año:'2020',
+                }
+            ]
+        },
+        {
+            id:"1263",
+            name: "Computadora",
+            price: 2500,
+            inOffer: false,
+            stock: 23,
+            description: "¨This is a computer",
+            features: [
+                {
+                    color:'verde',
+                    peso:'11 kg',
+                    marca:'chapulin',
+                    año:'1996',
+                }
+            ]
+        },
+        {
+            id:"1273",
+            name: "Radio",
+            price: 1750.75,
+            inOffer: false,
+            stock: 23,
+            description: "¨This is a Radio",
+            features: [
+                {
+                    color:'rojo',
+                    peso:'mucho',
+                    marca:'superpato',
+                    año:'2021',
+                    estado:'decente',
+                    frecuencia:'alta',
+                    longitud:'alta',
+                    procesador:'apoco lleva?',
+                }
+            ]
+        },
+        {
+            id:"1283",
+            name: "Televisor",
+            price: 2500,
+            inOffer: false,
+            stock: 0,
+            description: "¨This is a TV",
+            features: [
+                {
+                    color:'azul',
+                    peso:'poco',
+                    marca:'juan',
+                    año:'2020',
+                }
+            ]
+        },
+        {
+            id:"1293",
+            name: "Computadora",
+            price: 2500,
+            inOffer: false,
+            stock: 23,
+            description: "¨This is a computer",
+            features: [
+                {
+                    color:'verde',
+                    peso:'11 kg',
+                    marca:'chapulin',
+                    año:'1996',
+                }
+            ]
+        },
+        {
+            id:"1303",
+            name: "Radio",
+            price: 1750.75,
+            inOffer: false,
+            stock: 23,
+            description: "¨This is a Radio",
+            features: [
+                {
+                    color:'rojo',
+                    peso:'mucho',
+                    marca:'superpato',
+                    año:'2021',
+                    estado:'decente',
+                    frecuencia:'alta',
+                    longitud:'alta',
+                    procesador:'apoco lleva?',
+                }
+            ]
+        },
     ];
 
     private _selectedProduct:Product = 
