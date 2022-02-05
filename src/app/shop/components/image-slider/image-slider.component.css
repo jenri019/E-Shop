@@ -53,6 +53,7 @@ svg {
 .fzimage>img {
     height: 25rem;
     margin-bottom: 2rem;
+    object-fit:scale-down;
 }
 
 .btnarrow {

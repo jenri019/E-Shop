@@ -5,3 +5,10 @@
 form {
     height: 50%;
 }
+
+.product-number button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+}
