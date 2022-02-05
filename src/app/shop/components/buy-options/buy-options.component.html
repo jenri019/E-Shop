@@ -1,52 +1,21 @@
-<h2>{{name}}</h2>
-<h3>${{price.toFixed(2)}} MXN</h3>
+<h2 class="title">{{name}}</h2>
+<h3 class="non-disponible-text">${{price.toFixed(2)}} MXN</h3>
 <ng-container *ngIf="disponibility; else nonDisponible">
-    <h3>Disponible</h3>
+    <h3 class="disponible-text">Disponible</h3>
 </ng-container>
 <ng-template #nonDisponible>
-    <h3>No Disponible</h3>
+    <h3 class="non-disponible-text">No Disponible</h3>
 </ng-template>
 <form action="" class="v-flex justify-around">
     <div class="h-flex product-number">
-        <ng-container *ngIf="disponibility; else buyOptions">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
+        <ng-container *ngIf="disponibility">
+            <button>-
             </button>
             <input type="number" name="" id="" value="1" min="1" [max]="stock">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
+            <button>+
             </button>
         </ng-container>
-        <ng-template #buyOptions>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
-            </button>
-            <input type="number" name="" id="" value="0" disabled>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
-            </button>
-        </ng-template>
     </div>
-    <button disabled>Comprar ahora</button>
-    <button disabled>Agregar al carrito</button>
+    <button *ngIf="disponibility" class="bg-3 text-color-1 btn-shop" disabled>Comprar ahora</button>
+    <button *ngIf="disponibility" class="bg-2 text-color-3 btn-shop" disabled>Agregar al carrito</button>
 </form>

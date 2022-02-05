@@ -1,9 +1,6 @@
 .product-number {
-    justify-content: center;
-}
-
-form {
-    height: 50%;
+    justify-content: space-between;
+    width: 10rem;
 }
 
 .product-number button {
@@ -11,4 +8,34 @@ form {
     flex-direction: column;
     align-items: center;
     border-radius: 50%;
+}
+
+form {
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-shop {
+    width: 20rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 1rem;
+    border-style: none;
+}
+
+.btn-shop:hover {
+}
+
+.disponible-text {
+    color: #00d30b;
+}
+.non-disponible-text {
+    color: #e20000;
+}
+
+.title {
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
 }

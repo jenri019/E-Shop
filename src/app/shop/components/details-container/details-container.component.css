@@ -4,7 +4,12 @@
     justify-content: space-around;
 }
 
-.container>span>* {
+.container>div {
+    width: 100%;
+    justify-content: space-around;
+}
+
+#component-slider {
     max-width: 50%;
 }
 

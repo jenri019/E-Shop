@@ -4,7 +4,7 @@
 <br />
 <br />
 <div class="hcenter body">
-	<app-card-product *ngFor="let product of products"
+	<app-card-product *ngFor="let product of products | slice:0:4"
 		[name] = "product.name"
 		[price] = "product.price"
 		[id] = "product.id">
