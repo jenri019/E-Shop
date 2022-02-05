@@ -41,7 +41,7 @@ export class ProductService {
         {
             id:"1243",
             name: "Radio",
-            price: 2500,
+            price: 1750.75,
             inOffer: false,
             stock: 23,
             description: "¨This is a Radio",

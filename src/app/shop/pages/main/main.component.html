@@ -4,14 +4,11 @@
 <br />
 <br />
 <div class="hcenter body">
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
-	<app-card-product></app-card-product>
+	<app-card-product *ngFor="let product of products"
+		[name] = "product.name"
+		[price] = "product.price"
+		[id] = "product.id">
+	</app-card-product>
 </div>
 <div class="hcenter category-body">
 	<app-category></app-category>
