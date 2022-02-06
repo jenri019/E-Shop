@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ProductService } from '../../services/product.service';
+import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-details-container',
@@ -8,6 +8,14 @@ import { ProductService } from '../../services/product.service';
 })
 export class DetailsContainerComponent {
 
+  public do:boolean = false;
+
   constructor() { }
 
+  public ngOnInit(): void {
+    const counter = timer(1500);
+    counter.subscribe((n)=>{
+      this.do = true;
+    });
+  }
 }

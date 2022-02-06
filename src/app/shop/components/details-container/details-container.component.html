@@ -1,7 +1,12 @@
-<div class="container bg-1 shadow">
-    <div class="h-flex">
-        <app-image-slider id="component-slider" class="v-flex"></app-image-slider>
-        <app-buy-options id="component-options" class="v-flex justify-around padding-left-1"></app-buy-options>
+<ng-container *ngIf="!do; else elseTemplate">
+    <div>Espera un momento...</div>
+</ng-container>
+<ng-template #elseTemplate>
+    <div class="container bg-1 shadow">
+        <div class="h-flex">
+            <app-image-slider id="component-slider" class="v-flex"></app-image-slider>
+            <app-buy-options id="component-options" class="v-flex justify-around padding-left-1"></app-buy-options>
+        </div>
+        <app-description></app-description>
     </div>
-    <app-description></app-description>
-</div>
+</ng-template>
